@@ -1,0 +1,159 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  max-width: 50rem;
+  margin: 0 auto;
+  padding: 1rem;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #1a1b1c;
+  background: #7caef5;
+}
+
+header,
+main,
+footer {
+  padding: 1.5rem;
+  margin-bottom: 1rem;
+  background: rgb(252, 252, 253);
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+
+h1 {
+  color: #1644cc;
+}
+
+.notice {
+  color: #175cd3;
+  font-weight: 500;
+}
+
+* Card Form dibuat responsif memenuhi wadah main .card {
+  width: 100%;
+  padding: 1.5rem;
+  border: 2px solid #33efca;
+  border-radius: 8px;
+  background: #ffffff;
+  margin-top: 1rem;
+}
+
+.card label {
+  display: block;
+  margin-top: 1rem;
+  margin-bottom: 0.25rem;
+  font-weight: bold;
+}
+
+.card input[type="text"],
+.card input[type="email"],
+.card input[type="tel"],
+.card input[type="number"],
+.card select,
+.card textarea {
+  width: 100%;
+  padding: 0.6rem;
+  border: 1px solid #4543cc;
+  border-radius: 4px;
+  font-size: 0.95rem;
+}
+
+fieldset {
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  padding: 1rem;
+  margin-top: 1rem;
+}
+
+fieldset legend {
+  font-weight: bold;
+}
+
+.card label.label-inline {
+  display: inline;
+  font-weight: normal;
+  margin-right: 1.5rem;
+}
+
+button {
+  padding: 0.75rem 1rem;
+  color: white;
+  background: #5070d0;
+  border: 0;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button[type="submit"] {
+  width: 100%;
+  margin-top: 1.25rem;
+}
+
+button:hover {
+  background: #455eb3;
+}
+
+/*.nav-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  list-style: none;
+  padding: 0;
+}*/
+.nav-list { display: flex; flex-wrap: wrap; gap: .75rem; }
+input, select, textarea { max-width: 100%; }
+
+/*.catalog {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 15rem), 1fr));
+}
+  */
+  .catalog { display: grid; gap: 1rem; grid-template-columns: 1fr; }
+@media (min-width: 48rem) {
+ .catalog { grid-template-columns: repeat(2, 1fr); }
+}
+
+
+
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+  padding: var(--space-2, 1rem);
+  border: 1px solid #ccd;
+  border-radius: 8px;
+  background: #ffffff;
+  min-width: 0;
+}
+
+
+.card h2 {
+  overflow-wrap: anywhere;
+}
+.card h2,
+.card p {
+  margin: 0;
+}
+
+.card a {
+  align-self: start;
+}
+body {
+    max-width: 50rem;
+    margin: 0 auto;
+    padding: 1rem;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #1a1b1c;
+
+    background-image: url("biru.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
+/* jika item tidak boleh mempertahankan lebar minimum besar */
+.card { min-width: 0; }
