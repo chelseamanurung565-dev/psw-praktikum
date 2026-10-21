@@ -1,0 +1,19 @@
+body {
+  max-width: 50rem;
+  margin: 0 auto;
+  padding: 1rem;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #222;
+  background: #e9e4e4;
+}
+header, main {
+  padding: 1rem; margin-bottom: 1rem;
+  background: rgba(190, 183, 228, 0.74); border: 1px solid #ddd;
+}
+h1 { color: #141414; }
+button { padding: .75rem 1rem; color: rgb(250, 247, 245); background: #6a6c71; border: 0; }
+form.card {
+    padding: 1rem;
+    background: white;
+}
