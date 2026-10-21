@@ -1,0 +1,1 @@
+Saya menggunakan AI yaitu ChatGPT untuk membantu saya saat mengalami error dalam menggunakan Git. Saya menanyakan penyebab munculnya error “fatal” dan meminta bantuan untuk memperbaiki perintah yang salah. Dari bantuan ChatGPT, saya jadi lebih mengerti kesalahan yang saya buat dan bagaimana cara memperbaikinya.
