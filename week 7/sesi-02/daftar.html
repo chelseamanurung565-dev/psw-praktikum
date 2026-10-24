@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="id">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Pendaftaran Kegiatan</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        /* Tambahan CSS langsung agar navigasi & radio button langsung rapi */
+        header nav ul {
+            list-style: none; 
+            padding: 0;
+            margin: 0 0 20px 0;
+            display: flex;
+            gap: 20px; /* Jarak antar menu */
+        }
+        header nav ul li a {
+            text-decoration: none;
+            color: #0066cc;
+        }
+        header nav ul li a:hover {
+            text-decoration: underline;
+        }
+        /* Membuat radio button luring & daring bersebelahan (ke samping) */
+        .radio-group {
+            display: flex;
+            gap: 20px;
+            align-items: center;
+            margin-top: 5px;
+        }
+        .radio-item {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Beranda</a></li>
+                <li><a href="kegiatan.html">Kegiatan</a></li>
+                <li><a href="daftar.html">Daftar</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <script src="main.js"></script>
+
+        <h1>Pendaftaran Kegiatan</h1>
+        <figure>
+
+        </figure>
+        
+        <p class="notice">Kolom bertanda wajib harus diisi.</p>
+        
+        <form method="get" class="card">
+            <label for="nama">Nama lengkap (wajib)</label> 
+            <input id="nama" name="nama" autocomplete="name" required>
+            
+            <label for="email">Email (wajib)</label>
+            <input id="email" name="email" type="email" autocomplete="email" required>
+
+            <label for="prodi">Program studi (wajib)</label> 
+            <select id="prodi" name="prodi" required>
+                <option value="">Pilih program studi</option>
+                <option value="trpl">D4 TRPL</option>
+                <option value="ti">D3 Teknologi Informasi</option>
+            </select>
+
+            <fieldset>
+                <legend>Mode kehadiran (wajib)</legend> 
+                <div class="radio-group">
+                    <div class="radio-item">
+                        <input id="luring" name="mode" type="radio" value="luring" required> 
+                        <label for="luring">Luring</label>
+                    </div>
+                    <div class="radio-item">
+                        <input id="daring" name="mode" type="radio" value="daring"> 
+                        <label for="daring">Daring</label>
+                    </div>
+                </div>
+            </fieldset> 
+
+            <label for="telepon">Nomor telepon (wajib)</label>
+            <input id="telepon" name="telepon" type="tel" autocomplete="tel" required>
+
+            <label for="jumlah">Jumlah tiket (wajib)</label>
+            <input id="jumlah" name="jumlah" type="number" min="1" max="5" step="1" required>
+            
+            <label for="kode">Kode peserta (6 angka, wajib)</label>
+            <p id="kode-help">Contoh: 001234. Gunakan tepat enam angka.</p>
+            <input id="kode" name="kode" type="text" inputmode="numeric" pattern="[0-9]{6}" aria-describedby="kode-help" required>
+
+            <fieldset>
+                <legend>Minat topik</legend>
+                <div class="radio-group">
+                    <div class="radio-item">
+                        <input id="html" name="minat" type="checkbox" value="html">
+                        <label for="html">HTML</label>
+                    </div>
+                    <div class="radio-item">
+                        <input id="aksesibilitas" name="minat" type="checkbox" value="aksesibilitas">
+                        <label for="aksesibilitas">Aksesibilitas</label>
+                    </div>
+                </div>
+            </fieldset>
+
+            <label for="catatan">Catatan (opsional)</label> 
+            <textarea id="catatan" name="catatan" rows="4" maxlength="300"></textarea> 
+            
+            <button type="submit">Daftar</button>
+        </form>
+    </main>
+</body>
+
+</html>
+
